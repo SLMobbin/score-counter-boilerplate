@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#scoreboard {
+  margin-bottom: 2rem;
+}
+
+#scores-list {
+  list-style: none;
+  padding: 0;
+}
+
+#scores-list li {
+  background: #eef3f7;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+#add-score form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#add-score input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add-score button {
+  padding: 0.5rem 1rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#add-score button:hover {
+  background: #357ab8;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Score Counter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🏆 Score Counter</h1>
+  </header>
+
+  <main>
+    <section id="scoreboard">
+      <h2>Current Scores</h2>
+      <ul id="scores-list">
+        <!-- Scores will be injected here by script.js -->
+      </ul>
+    </section>
+
+    <section id="add-score">
+      <h2>Add New Score</h2>
+      <form id="score-form">
+        <input type="text" id="player" placeholder="Player name" required />
+        <input type="number" id="points" placeholder="Points" required />
+        <button type="submit">Add Score</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Score Counter Boilerplate © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
