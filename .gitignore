@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# Environment variables
+config/.env
+config/.env.*
+.env
+.env.*
+
+# Database
+*.sqlite
+*.db
+pgdata/
+*.log
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+jest-cache/
+jest-temp/
+
+# VS Code
+.vscode/
+.history/
+
+# OS files
+.DS_Store
+Thumbs.db

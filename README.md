@@ -1,13 +1,13 @@
 # Score Counter Boilerplate
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Framework: ReactNative](https://img.shields.io/badge/Framework-ReactNative-lightblue.svg)
+![Database: PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue.svg)
 ![Language: JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow.svg)
 ![Language: HTML](https://img.shields.io/badge/Language-HTML-orange.svg)
 ![Style: CSS](https://img.shields.io/badge/Style-CSS-purple.svg)
-![Database: PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue.svg)
+![Framework: Express](https://img.shields.io/badge/Framework-Express-lightgrey.svg)
 
-A reusable starter kit for building score‑tracking apps. Provides core components for point entry, live updates, and match history, with modular logic adaptable to different sports or games.
+A reusable starter kit for building score‑tracking web apps. Provides core components for point entry, live updates, and match history, with modular logic adaptable to different sports or games.
 
 ## 🚀 Features
 - Simple point entry with intuitive controls
@@ -16,33 +16,31 @@ A reusable starter kit for building score‑tracking apps. Provides core compone
 - Modular scoring logic (easy to adapt for padel, tennis, basketball, etc.)
 - Clean UI components ready for customization
 
-## 📂 Project Structure
-- `src/`
-  - `components/` → UI elements (ScoreBoard, Controls, MatchHistory)
-  - `screens/` → App screens (Home, Match, Results)
-  - `utils/` → Scoring logic, helpers, and validation
-  - `services/` → API calls, database integration (PostgreSQL)
-  - `styles/` → CSS/StyleSheets for layout and design
-  - `assets/` → Icons, images, fonts
-- `public/` → Static HTML files and assets
-- `tests/` → Unit and integration tests
-- `config/` → Environment variables, database configs
-- `docs/` → Documentation, flow diagrams, usage 
 
 ## 🛠️ Getting Started
-1. Clone the repo:  
+1. Clone the repo & install dependencies:  
     ```bash
-    git clone https://github.com/your-org/score-counter-boilerplate.git
-    ```
-2. Install dependencies:
-    ```bash
+    git clone https://github.com/yourname/score-counter-boilerplate.git
+    cd score-counter-boilerplate
     npm install
     ```
-
-3. Run the app:
+2. Update configuration in `config/.env`:
     ```bash
-    npm start
+    PORT=3000
+    DB_USER=your_postgres_username
+    DB_PASS=your_postgres_password
+    DB_HOST=localhost
+    DB_PORT=5432
+    DB_NAME=score_counter
+    NODE_ENV=development
     ```
 
-📖 Usage
-Use this boilerplate as a template to kickstart your own score‑tracking app. Modify the scoring logic in utils/scoring.js and customize UI components to fit your sport or game.
+3. Run migrations & seed:
+    ```bash
+    npm run db:migrate
+    npm run db:seed
+    ```
+3. Run the app:
+    ```bash
+    npm run dev
+    ```

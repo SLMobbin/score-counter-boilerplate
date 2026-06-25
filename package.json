@@ -1,0 +1,37 @@
+{
+  "name": "score-counter-boilerplate",
+  "version": "1.0.0",
+  "description": "A reusable starter kit for building score-tracking web apps.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "db:migrate": "knex migrate:latest",
+    "db:seed": "knex seed:run"
+  },
+  "keywords": [
+    "score",
+    "counter",
+    "boilerplate",
+    "express",
+    "postgresql",
+    "html",
+    "css"
+  ],
+  "author": "Sam Lee",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.0",
+    "pg": "^8.11.0",
+    "knex": "^3.0.0",
+    "dotenv": "^16.4.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "jest": "^29.7.0",
+    "eslint": "^9.0.0"
+  }
+}
